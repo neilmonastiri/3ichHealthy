@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_grey">
+
+
+    <LinearLayout
+        android:id="@+id/progressBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/progressBox1"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/progress_box_done" />
+
+        <TextView
+            android:id="@+id/progressBox2"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/progress_box_done" />
+
+        <TextView
+            android:id="@+id/progressBox3"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/progress_box_done" />
+
+        <TextView
+            android:id="@+id/progressBox4"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/progress_box_done" />
+
+        <TextView
+            android:id="@+id/progressBox5"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/progress_box" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/QuestionTaille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/quelle_est_votre_taille"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/taille"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QuestionTaille"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/_0"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="TextFields" />
+
+    <RadioGroup
+        android:id="@+id/cm_ft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taille"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/cm"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="@string/cm"
+            android:fontFamily="@font/poppins_semibold"
+            android:button="@android:color/transparent"
+            android:background="@drawable/btn_selector"
+            android:textColor="@drawable/btn_text_color"
+            android:textAlignment="center"
+            android:layout_marginEnd="25dp"/>
+
+        <RadioButton
+            android:id="@+id/ft"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="@string/ft"
+            android:fontFamily="@font/poppins_semibold"
+            android:button="@android:color/transparent"
+            android:background="@drawable/btn_selector"
+            android:textColor="@drawable/btn_text_color"
+            android:textAlignment="center"
+            android:layout_marginStart="25dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/QuestionPoids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cm_ft"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/combien_pesez_vous"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/poids"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QuestionPoids"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/_0"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="TextFields" />
+
+    <RadioGroup
+        android:id="@+id/kg_lbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poids"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/kg"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="@string/kg"
+            android:fontFamily="@font/poppins_semibold"
+            android:button="@android:color/transparent"
+            android:background="@drawable/btn_selector"
+            android:textColor="@drawable/btn_text_color"
+            android:textAlignment="center"
+            android:layout_marginEnd="25dp"/>
+
+        <RadioButton
+            android:id="@+id/lbs"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="@string/lbs"
+            android:fontFamily="@font/poppins_semibold"
+            android:button="@android:color/transparent"
+            android:background="@drawable/btn_selector"
+            android:textColor="@drawable/btn_text_color"
+            android:textAlignment="center"
+            android:layout_marginStart="25dp"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/page4btn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/most_used_btn"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/suivant"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

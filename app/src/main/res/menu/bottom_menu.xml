@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/home"
+        android:title="@string/Acceuil"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/journal"
+        android:title="@string/journal"
+        android:icon="@drawable/ic_diary"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/holder"
+        android:title=""
+        app:showAsAction="ifRoom"
+        android:enabled="false"/>
+
+    <item android:id="@+id/stat"
+        android:title="@string/stat"
+        android:icon="@drawable/ic_stats"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/more"
+        android:title="@string/plus"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="ifRoom"
+        android:enabled="true"/>
+
+</menu>

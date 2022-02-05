@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_grey">
+
+
+    <LinearLayout
+        android:id="@+id/progressBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/progressBox1"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/progress_box_done" />
+
+        <TextView
+            android:id="@+id/progressBox2"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/progress_box_done" />
+
+        <TextView
+            android:id="@+id/progressBox3"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/progress_box_done" />
+
+        <TextView
+            android:id="@+id/progressBox4"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/progress_box" />
+
+        <TextView
+            android:id="@+id/progressBox5"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/progress_box" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/PersoQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/question_sexe"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/home_femme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/PersoQuestion"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/homme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:text="@string/homme"
+            android:fontFamily="@font/poppins_semibold"
+            android:button="@android:color/transparent"
+            android:background="@drawable/btn_selector"
+            android:textColor="@drawable/btn_text_color"
+            android:layout_marginEnd="20dp"/>
+
+        <RadioButton
+            android:id="@+id/femme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:text="@string/femme"
+            android:fontFamily="@font/poppins_semibold"
+            android:button="@android:color/transparent"
+            android:background="@drawable/btn_selector"
+            android:textColor="@drawable/btn_text_color"
+            android:layout_marginStart="20dp"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/QuestionAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_femme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/quel_est_votre_age"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <EditText
+        android:id="@+id/EmailOrUsernameSignUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QuestionAge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/votre_age"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="TextFields" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/page3btn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/most_used_btn"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/suivant"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
